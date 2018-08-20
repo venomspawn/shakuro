@@ -1,10 +1,11 @@
 ---
 apt_packages:
+  - make
+  - g++
   - libpq-dev
   - mc
   - vim
   - ruby2.5-dev
-  - g++
 
 ruby_version: 2.5
 
