@@ -50,6 +50,8 @@ RSpec.describe Shakuro::Models::Publisher do
     let(:instance) { create(:publisher) }
 
     describe 'result' do
+      subject { result }
+
       it { is_expected.to be_an(Integer) }
     end
   end
@@ -60,6 +62,8 @@ RSpec.describe Shakuro::Models::Publisher do
     let(:instance) { create(:publisher) }
 
     describe 'result' do
+      subject { result }
+
       it { is_expected.to be_a(String) }
     end
   end
