@@ -1,0 +1,16 @@
+---
+default: &default
+  adapter: postgres
+  user: <%= ENV['SHAKURO_DB_USER'] %>
+  password: "<%= ENV['SHAKURO_DB_PASS'] %>"
+  host: <%= ENV['SHAKURO_DB_HOST'] %>
+  database: <%= ENV['SHAKURO_DB_NAME'] %>
+
+development:
+  <<: *default
+
+production:
+  <<: *default
+
+test:
+  <<: *default
