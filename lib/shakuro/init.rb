@@ -63,14 +63,14 @@ module Shakuro
     # Launches files loading if it hasn't been done
     # @param [Array] names
     #   array of initialization names
-    def self.run!(names = [])
-      instance.run!(names)
+    def self.run!(*names)
+      instance.run!(*names)
     end
 
     # Launches files loading if it hasn't been done
     # @param [Array] names
     #   array of initialization names
-    def run!(names)
+    def run!(*names)
       return if initialized?
       mutex.synchronize do
         return if initialized?
