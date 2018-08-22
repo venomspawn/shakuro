@@ -16,7 +16,7 @@ module Shakuro
       #   there are no additional parameters
       # @return [Hash]
       #   resulting associative array
-      def self.index_shops(params, rest)
+      def self.index_shops(params, rest = nil)
         IndexShops.new(params, rest).index
       end
     end
