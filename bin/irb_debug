@@ -5,6 +5,8 @@
 
 require_relative '../config/app_init.rb'
 
+Shakuro::Init.run!
+
 require 'irb'
 require 'irb/completion'
 
@@ -20,5 +22,4 @@ rescue LoadError
   nil
 end
 
-Shakuro::Init.run!
 IRB.start
