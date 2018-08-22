@@ -14,6 +14,7 @@ Metrics/BlockLength:
     - db/migrations/*
     - spec/**/*_spec.rb
     - spec/factories/**/*
+    - spec/shared/**/*
     - Rakefile
     - Vagrantfile
 
