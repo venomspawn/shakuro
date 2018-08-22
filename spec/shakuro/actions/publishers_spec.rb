@@ -53,6 +53,11 @@ RSpec.describe Shakuro::Actions::Publishers do
             expect(subject[0][:books_sold_count]).to be == 6
             expect(subject[1][:books_sold_count]).to be == 3
           end
+
+          it 'should include proper information about books in stock' do
+            expect(subject[0][:books_in_stock].map { |hash| hash[:id] })
+              .to match_array books.map(&:id)
+          end
         end
       end
     end
