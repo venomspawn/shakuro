@@ -136,6 +136,7 @@ module Shakuro
         # @return [Sequel::Dataset]
         #   resulting Sequel dataset
         def shops_dataset
+          # rubocop: disable Style/NumericPredicate
           Models::Shop
             .dataset
             .join(shop_books_dataset, SHOPS_ID => SHOP_BOOKS_SHOP_ID)
@@ -143,6 +144,7 @@ module Shakuro
             .where { SHOP_BOOKS_BOOKS_SELLING_COUNT > 0 }
             .order(SHOP_BOOKS_BOOKS_SOLD_COUNT_DESC)
             .naked
+          # rubocop: enable Style/NumericPredicate
         end
 
         # Returns associative array with information about books of publisher

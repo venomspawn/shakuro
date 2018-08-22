@@ -14,10 +14,10 @@ module Shakuro
                 type: :object,
                 properties: {
                   id: {
-                    type: :integer,
+                    type: :integer
                   },
                   name: {
-                    type: :string,
+                    type: :string
                   },
                   books_sold_count: {
                     type: :integer,
@@ -29,10 +29,10 @@ module Shakuro
                       type: :object,
                       properties: {
                         id: {
-                          type: :integer,
+                          type: :integer
                         },
                         title: {
-                          type: :string,
+                          type: :string
                         },
                         copies_in_stock: {
                           type: :integer,
