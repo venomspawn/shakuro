@@ -8,6 +8,8 @@ Vagrant.configure(2) do |config|
     dev.vm.provider 'virtualbox' do |machine|
       machine.memory = 512
       machine.cpus   = 1
+
+      machine.customize ['modifyvm', :id, '--uartmode1', 'disconnected']
     end
 
     dev.vm.box      = 'ubuntu/xenial64'
