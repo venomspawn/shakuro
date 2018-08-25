@@ -16,8 +16,8 @@ module Shakuro
             # Returns information of shops selling at least one copy of a book
             # released by a publisher
             # @return [Hash]
-            #   associative array with structure described in JSON-schema
-            #   {Shakuro::Actions::Publishers::IndexShop::RESULT_SCHEMA}
+            #   associative array with structure described in
+            #   {Actions::Publishers::IndexShops::RESULT_SCHEMA JSON-schema}
             # @return [Status]
             #   200
             controller.get '/publishers/:id/shops' do |id|

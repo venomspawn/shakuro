@@ -11,9 +11,9 @@ module Shakuro
   # that initialization file names have `<no>_<name>.rb` format, where `<no>`
   # is ASCII-string of length of 2, and loads the files sorted by their full
   # name.
-  # @example
-  # Let there are  initialization files in directory `config/initializers` with
-  # the following names:
+  #
+  # For example, let there are initialization files in the directory
+  # `config/initializers` with the following names:
   #
   # ```
   # config/
@@ -23,7 +23,7 @@ module Shakuro
   #     03_rest.rb
   # ```
   #
-  # Then in file `config/app_init.rb` the directory can be provided as the
+  # Then the directory can be provided in the file `config/app_init.rb` as the
   # following:
   #
   # ```
@@ -42,10 +42,11 @@ module Shakuro
   # ```
   # Shakuro::Init.run!('sequel', 'class_ext')
   # ```
-  # as the files will be loaded in proper order.
+  # and the files will be loaded in proper order.
   #
-  # If all these initialization files are to be loaded then the function `run!`
-  # should be called without arguments:
+  # If all of these initialization files are to be loaded then the function
+  # `run!` should be called without arguments:
+  #
   # ```
   # Shakuro::Init.run!
   # ```
