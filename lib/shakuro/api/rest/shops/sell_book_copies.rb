@@ -14,9 +14,9 @@ module Shakuro
           #   REST API controller
           def self.registered(controller)
             # Marks book copies of a shop as sold
-            # @param [Hash]
-            #   associative array with structure described in JSON-schema
-            #   {Shakuro::Actions::Publishers::IndexShop::PARAMS_SCHEMA}
+            # @param [Hash] params
+            #   associative array with structure described in
+            #   {Actions::Shops::SellBookCopies::PARAMS_SCHEMA JSON-schema}
             # @return [Status]
             #   204
             controller.post '/shops/:id/sold_book_copies' do |id|
