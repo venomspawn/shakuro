@@ -19,7 +19,7 @@ following technologies:
 ## Usage
 
 Although it's not required, it's highly recommended to use the project in a
-virtual machine. The project provides Vagrantfile to automatically deploy and
+virtual machine. The project provides `Vagrantfile` to automatically deploy and
 provision virtual machine with use of [VirtualBox](https://www.virtualbox.org/)
 and [vagrant](https://www.vagrantup.com/) tool. One can use `vagrant up` in the
 root directory of the cloned project to launch virtual machine and `vagrant
