@@ -8,7 +8,7 @@ test:
 	bundle exec rspec --fail-fast
 
 migrate:
-	bundle exec rake cit:migrate
+	bundle exec rake shakuro:migrate
 
 .PHONY: doc
 doc:
