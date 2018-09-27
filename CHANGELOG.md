@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.1] — 2018-09-27
+
+*   Add migration command to Makefile (#11)
+
 ## [1.0.0] — 2018-08-25
 
 *   Introduce base infrastructure (#1)
@@ -10,4 +14,5 @@
     (#7)
 *   Improve documentation (#9)
 
+[1.0.1]: https://github.com/venomspawn/shakuro/compare/1.0.0...1.0.1
 [1.0.0]: https://github.com/venomspawn/shakuro/compare/3373e86a644e77430636f7ac957b5e93742c1544...1.0.0
