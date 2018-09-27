@@ -7,6 +7,9 @@ debug:
 test:
 	bundle exec rspec --fail-fast
 
+migrate:
+	bundle exec rake cit:migrate
+
 .PHONY: doc
 doc:
 	bundle exec yard doc --quiet
